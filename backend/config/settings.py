@@ -70,7 +70,7 @@ DATABASES = {
         'NAME': 'canteen_db',
         'USER': 'canteen_user',
         'PASSWORD': 'techBteam',
-        'HOST': 'localhost',
+        'HOST': 'db',
         'PORT': '3306',
     }
 }
