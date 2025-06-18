@@ -1,0 +1,41 @@
+#docker-compose.yml
+
+version: '3.8'
+
+services:
+  db:
+    image: mysql:8
+    environment:
+      MYSQL_ROOT_PASSWORD: techBteam
+      MYSQL_DATABASE: canteen_db
+      MYSQL_USER: canteen_user
+      MYSQL_PASSWORD: techBteam
+    volumes:
+      - mysql_data:/var/lib/mysql
+    ports:
+      - "3307:3306"
+
+  backend:
+    build:
+      context: ./backend
+    command: bash -c "python manage.py migrate && python manage.py runserver 0.0.0.0:8000"
+    volumes:
+      - ./backend:/app
+    ports:
+      - "8000:8000"
+    depends_on:
+      - localhost
+
+  frontend:
+    build:
+      context: ./frontend-web
+      dockerfile: Dockerfile
+    volumes:
+      - ./frontend-web:/app
+    ports:
+      - "3000:5173"
+    stdin_open: true
+    tty: true
+
+volumes:
+  mysql_data:
