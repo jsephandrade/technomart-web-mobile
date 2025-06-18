@@ -1,62 +1,106 @@
-# Technomart Web & Mobile
+# TechnoMart Web & Mobile
 
-This repository contains a demo full-stack application composed of a Django REST API, a React web client and an Expo mobile application. The services can be run together using **docker-compose** or individually for development.
+**TechnoMart** is a full-stack, cross-platform Canteen Management System developed for the **CTU-MC Multipurpose Cooperative**, designed to digitize and optimize food ordering, inventory tracking, payment handling, and analytics through a **web-based dashboard** and **mobile app**.
 
-## Repository structure
+## 🧠 Project Motivation
 
-- **backend** – Django project exposing REST endpoints
-- **frontend-web** – React + Vite SPA
-- **mobile-app** – Expo React Native project
-- **docker-compose.yml** – brings up MySQL, the backend and the frontend
+The existing manual system causes long queues, inventory mismanagement, and poor forecasting. TechnoMart addresses these pain points by offering a digital-first solution that optimizes operations for customers, staff, managers, and admins.
 
-## Prerequisites
+> 🏫 Developed as a Capstone Project by BSIS students at Cebu Technological University – Main Campus.
 
-- [Docker](https://docs.docker.com/get-docker/) and Docker Compose
-- Node.js 18+ (for frontend/mobile development)
-- Python 3.10 (if running the backend without Docker)
+---
 
-## Quick start with Docker
+## 🛠️ Features
+
+### 👨‍🍳 Mobile App (Expo - React Native)
+
+- Browse and customize food orders
+- Pre-order meals with preferred pickup time
+- Face scan login for secure access
+- Catering request for events
+- Payment via cash or online
+- Track order status and view order history
+
+### 🖥️ Web Dashboard (React + Django)
+
+- POS system for order processing
+- Inventory management with restock alerts
+- Staff scheduling and activity logs
+- Analytics: sales, inventory trends, purchase behavior
+- Admin panel for user/account management
+- Notification and feedback management
+
+---
+
+## 🚀 Technology Stack
+
+| Layer        | Tools                       |
+| ------------ | --------------------------- |
+| Frontend Web | React.js, Tailwind CSS      |
+| Mobile App   | React Native, Expo          |
+| Backend      | Django REST Framework (DRF) |
+| Database     | MySQL                       |
+| Infra        | Docker, GitHub CI/CD        |
+
+---
+
+## 🧪 How to Run Locally (Dev Mode)
+
+### 1. Clone the repository
 
 ```bash
-# Build and start all services
+git clone https://github.com/jsephandrade/technomart-web-mobile.git
+cd technomart-web-mobile
+```
+
+### 2. Start services with Docker
+
+```bash
 docker-compose up --build
 ```
 
-Once running:
+### 3. Access Applications
 
-- Backend API: <http://localhost:8000/>
-- React web app: <http://localhost:3000/>
-- MySQL: port `3307` on localhost
+- Web Dashboard: `http://localhost:3000`
+- API Server: `http://localhost:8000/api/`
+- Mobile App: Run with `npx expo start` inside `mobile-app/`
 
-## Developing each project individually
+---
 
-### Backend
+## 🧠 Project Team
 
-```bash
-cd backend
-python -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
-python manage.py migrate
-python manage.py runserver
-```
+| Name             | Role         | Nickname |
+| ---------------- | ------------ | -------- |
+| Joseph Andrade   | Project Lead | Hustler  |
+| Helen Sabay      | Developer    | Hacker   |
+| Divine Quijano   | Frontend     | Hipster  |
+| Rhea Mae Navares | Backend      | Hipster  |
 
-### Web frontend
+---
 
-```bash
-cd frontend-web
-npm install
-npm run dev
-```
+## 📚 Academic Context
 
-### Mobile app
+This project fulfills the capstone requirement for the **BS Information Systems** degree at **Cebu Technological University – Main Campus**. Supervised by:
 
-```bash
-cd mobile-app
-npm install
-npx expo start
-```
+- **Mr. Angelbert P. Maghanoy** – Adviser
+- **Mr. Jonathan A. Miraballes** – Client
+- **Mr. Jose Maria S. Garcia II** – Instructor
 
-## Notes
+---
 
-This project is meant as a starting point and contains minimal boilerplate for each component. Feel free to modify or extend the applications to suit your needs.
+## 📄 License
+
+This project is strictly for academic and demonstration purposes. Commercial or institutional use requires permission from the project team and CTU-MC.
+
+---
+
+## 📬 Contact
+
+For collaboration or inquiries:
+
+- 📧 joseph.andrade@ctu.edu.ph
+- 🔗 [GitHub](https://github.com/jsephandrade)
+
+---
+
+> “Digitizing food service for efficiency, transparency, and better campus experience.” – Team TechnoMart
