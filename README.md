@@ -104,3 +104,12 @@ For collaboration or inquiries:
 ---
 
 > “Digitizing food service for efficiency, transparency, and better campus experience.” – Team TechnoMart
+
+## Auth UI Demo
+
+This repository also contains a minimal Expo project demonstrating the TechnoMart authentication screens.
+
+```bash
+npm i
+npx expo start
+```
