@@ -1,0 +1,3 @@
+[submodule "front-end-mobile"]
+	path = front-end-mobile
+	url = https://github.com/jsephandrade/technomart-mobile-app.git
