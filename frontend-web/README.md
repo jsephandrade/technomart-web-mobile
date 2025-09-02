@@ -1,12 +1,48 @@
-# React + Vite
+# Welcome
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 🍽️ Technomart Canteen Management System
 
-Currently, two official plugins are available:
+An intelligent canteen ordering system built for the CTU-MC Multipurpose Cooperative. This platform digitizes food ordering, payment processing, inventory tracking, and user analytics — optimized for speed, accessibility, and usability across devices.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🧰 Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- ⚡ **Vite** — Lightning-fast development server and bundler
+- ⚛️ **React** — Component-based UI framework
+- ✨ **TypeScript** — Type-safe JavaScript for scalability
+- 🎨 **Tailwind CSS** — Utility-first CSS framework
+- 🧩 **shadcn/ui** — Accessible, headless UI components
+
+---
+
+## 📸 Screenshots
+
+![Dashboard](dashboard.png)
+
+---
+
+## 🚀 Features
+
+- ✅ Mobile-first design for ordering meals
+- 💳 Supports cash, GCash, and other digital payments
+- 📦 Inventory and supplier management
+- 📈 Analytics dashboard for admins
+- 🔐 Role-based access (Admin, Staff, Customer)
+- 🛎️ Pre-ordering, order tracking, and real-time status updates
+
+---
+
+## 🛠️ Installation
+
+```bash
+# Clone the repo
+git clone https://github.com/jsephandrade/technomart-canteen-management-system.git
+cd technomart-canteen-management-system
+
+# Install dependencies
+npm install
+
+# Run development server
+npm run dev
+```
